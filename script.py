@@ -2,7 +2,7 @@ import os
 import shutil
 
 dd_dir = "/home/rodrigo/Downloads"
-image_dir = "/home/rodrigo/Pictures"
+pictures_dir = "/home/rodrigo/Pictures"
 document_dir = "/home/rodrigo/Documents"
 del_dir = "/home/rodrigo/Delete"
 
@@ -13,8 +13,8 @@ for file in files:
     
     #Check if file is an image
     if file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp', '.mp3', '.mp4')):
-        shutil.move(file_path, image_dir)
-        print("Moved {file} to {image_dir}")
+        shutil.move(file_path, pictures_dir)
+        print("Moved {file} to {pictures_dir}")
     
     # Check if file is a document
     elif file.lower().endswith(('.pdf', '.doc', '.docx', '.txt')):
